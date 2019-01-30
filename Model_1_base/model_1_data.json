@@ -1,0 +1,44 @@
+{
+	"applicationObjects": {
+		"applicationSystem": "<EM_System_ID>",
+		"applicationObjectType": "OB_PT_00",
+		"applicationObjectId": "PT_NO_1",
+		"parameters": [{
+				"parameterName": "PAL_ID",
+				"parameterIndex": "0000000000",
+				"parameterValue": "0000001"
+		}, {
+				"parameterName": "SHIPPER",
+				"parameterIndex": "0000000000",
+				"parameterValue": "John Brown"
+		}, {
+				"parameterName": "SHIP_LOC",
+				"parameterIndex": "0000000000",
+				"parameterValue": "No.88 XXX Avenue"
+		}, {
+				"parameterName": "RECEIVER",
+				"parameterIndex": "0000000000",
+				"parameterValue": "Fred Smith"
+		}, {
+				"parameterName": "REC_LOC",
+				"parameterIndex": "0000000000",
+				"parameterValue": "No.66 YYY Road"
+		}, {
+				"parameterName": "SHIP_STAT",
+				"parameterIndex": "0000000000",
+				"parameterValue": "01"
+		}],
+ 
+                            
+		"trackingIds": [{
+				"trackingIdType": "PAR_01",
+				"trackingId": "0000001"
+		},{
+				"trackingIdType": "PO_NO",
+				"trackingId": "1234567890",
+				"validFrom": "2018-12-11T12:00:00+01:00",
+				"validTo": "2019-12-30T12:00:00+01:00",
+				"timeZone": "CET"
+		}]
+	}
+}
