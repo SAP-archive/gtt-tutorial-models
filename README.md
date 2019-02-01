@@ -2,9 +2,9 @@
 
 
 ## Description
-This library contains sample models for using the SAP Global Track and Trace basic modeling tutorial, grouped in folders according to the referencing tutorial.
+This repository contains sample models for using the SAP Global Track and Trace basic modeling tutorial, grouped in folders according to the referencing tutorial.
 
-The SAP Global Track and Trace basic modeling tutorial guides you through the process of creating a basic Global Track and Trace (GTT) model from scratch, in a step-by-step manner. You can compare the models you have created with the sample models provided here to ensure that you have correctly followed the modeling procedure described in the tutorial.
+The SAP Global Track and Trace basic modeling tutorial guides you through the process of creating a basic Global Track and Trace (GTT) model from scratch, in a step-by-step manner. You can compare the models you have created with the sample models provided here to ensure that you have correctly followed the modeling procedure in the tutorial.
 
 
 ## Requirements
@@ -12,10 +12,13 @@ The sample models will run if you have followed the [SAP Global Track and Trace 
 
 
 ## Download and Installation
-The sample models supplied in this repository are for reference use. You compare these model files with the ones you have created by following the SAP Global Track and Trace tutorial to make sure you have correctly defined your model. 
+The sample models supplied in this repository are for reference use.  
 
-Details are described in the [SAP Global Track and Trace tutorial](https://help.sap.com/viewer/p/SAP_GLOBAL_TRACK_AND_TRACE) on SAP Help Portal.
- 
+To get the sample models:
+
+  - Clone the Git repository: `git clone https://github.com/SAP/gtt-tutorial-models`
+  - or [download the latest release](https://github.com/SAP/gtt-tutorial-models/archive/master.zip)
+
 
 ## Known Issues
 There are no known issues related to the resources included in this repository.
