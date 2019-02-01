@@ -16,8 +16,11 @@ The sample models supplied in this repository are for reference use.
 
 To get the sample models:
 
-  - Clone the Git repository: `git clone https://github.com/SAP/gtt-tutorial-models`
-  - or [download the latest release](https://github.com/SAP/gtt-tutorial-models/archive/master.zip)
+- [Clone the Git repository](https://help.github.com/articles/cloning-a-repository/) using this command:
+  
+  `git clone https://github.com/SAP/gtt-tutorial-models`
+  
+- or [download the files](https://github.com/SAP/gtt-tutorial-models/archive/master.zip) as a zip file.
 
 
 ## Known Issues
