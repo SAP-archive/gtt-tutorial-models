@@ -1,14 +1,14 @@
-# SAP Global Track and Trace Tutorial Models
+# Tutorial Models for SAP Logistics Business Network, Global Track and Trace Option
 
 
 ## Description
-This repository contains sample models for using the SAP Global Track and Trace basic modeling tutorial, grouped in folders according to the referencing tutorial.
+This repository contains sample models for using the basic modeling tutorial for the global track and trace option, grouped in folders according to the referencing tutorial.
 
-The SAP Global Track and Trace basic modeling tutorial guides you through the process of creating a basic Global Track and Trace (GTT) model from scratch, in a step-by-step manner. You can compare the models you have created with the sample models provided here to ensure that you have correctly followed the modeling procedure in the tutorial.
+The basic modeling tutorial guides you through the process of creating a basic Global Track and Trace (GTT) model from scratch, in a step-by-step manner. You can compare the models you have created with the sample models provided here to ensure that you have correctly followed the modeling procedure in the tutorial.
 
 
 ## Requirements
-The sample models will run if you have followed the [SAP Global Track and Trace tutorial](https://help.sap.com/viewer/p/SAP_GLOBAL_TRACK_AND_TRACE) on SAP Help Portal.
+The sample models will run if you have followed the [Basic Modeling Tutorial](https://help.sap.com/viewer/product/SAP_LBN_GTT_OPTION/LBN/en-US) on SAP Help Portal.
 
 
 ## Download and Installation
@@ -18,9 +18,9 @@ To get the sample models:
 
 - [Clone the Git repository](https://help.github.com/articles/cloning-a-repository/) using this command:
   
-  `git clone https://github.com/SAP/gtt-tutorial-models`
+  `git clone https://github.com/SAP-samples/gtt-tutorial-models`
   
-- or [download the files](https://github.com/SAP/gtt-tutorial-models/archive/master.zip) as a zip file.
+- or [download the files](https://github.com/SAP-samples/gtt-tutorial-models/archive/master.zip) as a zip file.
 
 
 ## Known Issues
