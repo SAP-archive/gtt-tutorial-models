@@ -8,7 +8,7 @@ The basic modeling tutorial guides you through the process of creating a basic G
 
 
 ## Requirements
-The sample models will run if you have followed the [Basic Modeling Tutorial](https://help.sap.com/viewer/product/SAP_LBN_GTT_OPTION/LBN/en-US) on SAP Help Portal.
+The sample models will run if you have followed the [Basic Modeling Tutorial](https://help.sap.com/viewer/product/SAP_LBN_GTT_OPTION/LBN/en-US?task=learn_task) on SAP Help Portal.
 
 
 ## Download and Installation
