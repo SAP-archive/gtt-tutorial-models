@@ -1,10 +1,12 @@
-# Tutorial Models for SAP Logistics Business Network, Global Track and Trace Option
+# Tutorial Models for SAP Logistics Business Network, Global Track and Trace Option (Version 1)
 
 
 ## Description
 This repository contains sample models for using the basic modeling tutorial for the global track and trace option, grouped in folders according to the referencing tutorial.
 
 The basic modeling tutorial guides you through the process of creating a basic Global Track and Trace (GTT) model from scratch, in a step-by-step manner. You can compare the models you have created with the sample models provided here to ensure that you have correctly followed the modeling procedure in the tutorial.
+
+<strong>Note</strong>: This is not applicable for Version 2 of the global track and trace option.
 
 
 ## Requirements
