@@ -1,0 +1,3 @@
+To download the zip file for this model:
+
+* Under *Releases*, select *Sample*, and download the *StandardDeliveryWithFilterOnItem.zip* file.
