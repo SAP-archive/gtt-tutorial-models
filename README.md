@@ -22,7 +22,7 @@ To get the sample models:
   
   `git clone https://github.com/SAP-samples/gtt-tutorial-models`
   
-- or [download the files](https://github.com/SAP-samples/gtt-tutorial-models/archive/main.zip) as a zip file.
+- or [download the files](https://github.com/SAP-samples/gtt-tutorial-models/archive/master.zip) as a zip file.
 
 
 ## Known Issues
