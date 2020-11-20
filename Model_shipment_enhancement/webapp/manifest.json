@@ -1,0 +1,139 @@
+{
+	"_version": "1.5.0",
+	"sap.app": {
+		"id": "com.sap.trackandtrace.webapp",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"title": "Shipment",
+		"description": "Shipment in SAP ERP",
+		"tags": {
+			"keywords": []
+		},
+		"ach": "av",
+		"resources": "resources.json",
+		"dataSources": {
+			"mainService": {
+				"uri": "/",
+				"type": "OData",
+				"settings": {
+					"annotations": ["localAnnotations_1"],
+					"localUri": "localService/metadata.xml"
+				}
+			},
+			"localAnnotations_1": {
+				"uri": "annotations/annotations.xml",
+				"type": "ODataAnnotation",
+				"settings": {
+					"localUri": "annotations/annotations.xml"
+				}
+			}
+		},
+		"offline": false,
+		"sourceTemplate": {
+			"id": "ui5template.smartTemplate",
+			"version": "1.40.12"
+		}
+	},
+	"sap.ui": {
+		"technology": "UI5",
+		"icons": {
+			"icon": "",
+			"favIcon": "",
+			"phone": "",
+			"phone@2": "",
+			"tablet": "",
+			"tablet@2": ""
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		},
+		"supportedThemes": ["sap_hcb", "sap_belize"]
+	},
+	"sap.ui5": {
+		"resources": {
+			"js": [],
+			"css": []
+		},
+		"dependencies": {
+			"minUI5Version": "1.42.0",
+			"libs": {
+				"sap.ui.core": {},
+				"sap.m": {},
+				"sap.ui.comp": {},
+				"sap.uxap": {},
+				"sap.suite.ui.generic.template": {},
+				"sap.ui.layout": {},
+				"sap.ushell": {},
+				"sap.collaboration": {}
+			},
+			"components": {}
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"uri": "i18n/i18n.properties"
+			},
+			"@i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"uri": "i18n/i18n.properties"
+			},
+			"": {
+				"dataSource": "mainService",
+				"settings": {
+					"defaultBindingMode": "TwoWay",
+					"defaultCountMode": "Inline",
+					"refreshAfterChange": false
+				}
+			}
+		},
+		"extends": {
+			"extensions": {
+				"sap.ui.viewExtensions": {
+					"sap.suite.ui.generic.template.ObjectPage.view.Details": {
+						"ReplaceFacet|ShipmentProcess|ProcessGeoMap": {
+							"className": "sap.ui.core.mvc.View",
+							"viewName": "com.sap.trackandtrace.webapp.ext.view.GeoMap",
+							"type": "XML"
+						}
+					}
+				},
+				"sap.ui.controllerExtensions": {
+					"sap.suite.ui.generic.template.ListReport.view.ListReport": {
+						"controllerName": "com.sap.trackandtrace.webapp.ext.controller.ListReportExtension"
+					}
+				}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		}
+	},
+	"sap.ui.generic.app": {
+		"pages": [{
+			"entitySet": "ShipmentProcess",
+			"component": {
+				"name": "sap.suite.ui.generic.template.ListReport",
+				"list": true
+			},
+			"pages": [{
+				"entitySet": "ShipmentProcess",
+				"component": {
+					"name": "sap.suite.ui.generic.template.ObjectPage"
+				}
+			}]
+		}]
+	},
+	"sap.fiori": {
+		"registrationIds": [],
+		"archeType": "transactional"
+	},
+	"sap.platform.hcp": {
+		"uri": ""
+	}
+}

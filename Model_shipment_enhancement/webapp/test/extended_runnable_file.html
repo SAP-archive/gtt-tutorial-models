@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html>
+<!-- Copyright (c) 2015 SAP AG, All Rights Reserved -->
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Model Preview</title>
+
+	<style>
+		#loading {
+			margin-top: 200px;
+			margin-bottom: 2em;
+			font-size: 16px;
+			font-family: sans-serif;
+			font-weight: bold;
+			color: #666;
+			text-align: center;
+		}
+	</style>
+
+	<!-- Bootstrap the unified shell in sandbox mode for standalone usage.
+
+         The renderer is specified in the global Unified Shell configuration object "sap-ushell-config".
+
+         The fiori2 renderer will render the shell header allowing, for instance,
+         testing of additional application setting buttons.
+
+         The navigation target resolution service is configured in a way that the empty URL hash is
+         resolved to our own application.
+
+         This example uses relative path references for the SAPUI5 resources and test-resources;
+         it might be necessary to adapt them depending on the target runtime platform.
+         The sandbox platform is restricted to development or demo use cases and must NOT be used
+         for productive scenarios.
+    -->
+	<script type="text/javascript">
+		window["sap-ushell-config"] = {
+			defaultRenderer: "fiori2",
+			renderers: {
+				fiori2: {
+					componentData: {
+						config: {
+							rootIntent: "masterDetail-display",
+							search: "hidden",
+							enableSearch: false,
+							enablePersonalization: false
+						}
+					}
+				}
+			},
+			applications: {
+				"masterDetail-display": {
+					"additionalInformation": "SAPUI5.Component=com.sap.trackandtrace.webapp",
+					"applicationType": "URL",
+					"url": "../",
+					"title": "Model Preview",
+					"description": "Model Preview"
+				}
+			}
+		};
+	</script>
+
+	<script src="/test-resources/sap/ushell/bootstrap/sandbox.js"></script>
+
+	<!-- Bootstrap the UI5 core library -->
+	<script id="sap-ui-bootstrap" src="/resources/sap-ui-core.js" data-sap-ui-libs="sap.m, sap.ui.comp, sap.ushell, sap.f, sap.suite.ui.generic.template" data-sap-ui-preload="async" data-sap-ui-theme="sap_belize" data-sap-ui-compatversion="edge" data-sap-ui-frameoptions="deny" data-sap-ui-resourceroots="{&quot;com.sap.trackandtrace.webapp&quot;: &quot;../&quot;}">
+	</script>
+
+	<script type="text/javascript">
+		sap.ui.getCore().attachInit(function() {
+			sap.ui.require([
+				"com/sap/trackandtrace/webapp/localService/mockserver"
+			], function (server) {
+				// set up test service for local testing
+				server.init();
+
+				// initialize the ushell sandbox component
+				sap.ushell.Container.createRenderer().placeAt("content");
+				jQuery("#loading").remove();
+			});
+		});
+	</script>
+
+<style>.facadebtn{display:inline-block;width:60px;height:60px;background-color:#009de0;border-radius:50px;text-align:center;box-shadow: 2px 2px 3px #999;opacity:.3;}
+.facadebtn .sapUiIcon{color:#FFF;font-size:1.5rem;cursor:pointer;line-height:60px;width:60px;}
+.facadebtn:hover{opacity:1;}
+#interactive.viewport video{width:320px;height:240px;}
+.facade .sapMSLITitleOnly, .facade .sapMILILabel {font-size: 1rem;}
+#interactive.viewport .drawingBuffer{width:320px;height:240px;position:absolute;}
+</style>
+<script type="text/javascript">
+
+window._facadeSettings = {"cordova-plugin-device-orientation":false,"accelerometer":{},"compass":{}};
+	window.sIdeOrigin = "https://webidecp-f0851a5076.dispatcher.int.sap.hana.ondemand.com";
+	window.sap_webide_FacadePreview = true;
+	window.sFacadePath = "https://webidecp-f0851a5076.dispatcher.int.sap.hana.ondemand.com/hatdi_w769dc465/hybrid/cordovafacade/cordova.js";
+	window.sFacadeCfgViewPath = "https://webidecp-f0851a5076.dispatcher.int.sap.hana.ondemand.com/hatdi_w769dc465/hybrid/view/";
+	window.bridgeHtml = "https://webidecp-f0851a5076.dispatcher.int.sap.hana.ondemand.com/hatdi_w769dc465/hybrid/cordovafacade/MessageBridge.html";
+	window.msgDefPath = "https://webidecp-f0851a5076.dispatcher.int.sap.hana.ondemand.com/hatdi_w769dc465/hybrid/mobileextend/MessageDef.js";
+	window.msgBridgePath = "https://webidecp-f0851a5076.dispatcher.int.sap.hana.ondemand.com/hatdi_w769dc465/hybrid/mobileextend/MessageBridge.js";
+	window.meCssPath = "https://webidecp-f0851a5076.dispatcher.int.sap.hana.ondemand.com/hatdi_w769dc465/hybrid/css/mobileExtend.css";
+</script>
+<script src="https://webidecp-f0851a5076.dispatcher.int.sap.hana.ondemand.com/hatdi_w769dc465/hybrid/cordovafacade/floatingButton.js" type="text/javascript"></script>
+</head>
+
+<!-- UI Content -->
+<body id="content" class="sapUiBody sapUiSizeCompact">
+	<div id="loading">Loading the application for the first time may take some time. Please wait.</div>
+</body>
+</html>
