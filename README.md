@@ -22,7 +22,7 @@ To get the sample models:
   
   `git clone https://github.com/SAP-samples/gtt-tutorial-models`
   
-- or [download the files](https://github.com/SAP-samples/gtt-tutorial-models/archive/master.zip) as a zip file.
+- or [download the files](https://github.com/SAP-samples/gtt-tutorial-models/archive/main.zip) as a zip file.
 
 
 ## Known Issues
@@ -34,5 +34,4 @@ This project is provided "as-is" with no expected changes or support.
 
 
 ## License
-Copyright (c) 2019 SAP SE or an SAP affiliate company. All rights reserved.
-This file is licensed under the SAP Sample Code License Agreement except as noted otherwise in the [LICENSE](LICENSE).
+Copyright (c) 2020 SAP SE or an SAP affiliate company. All rights reserved. This project is licensed under the Apache Software License, version 2.0 except as noted otherwise in the [LICENSE](LICENSES/Apache-2.0.txt) file.
