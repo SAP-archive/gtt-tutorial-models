@@ -1,0 +1,8 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: gtt-tutorial-models
+Upstream-Contact: Lori Lu (lori.lu@sap.com)
+Source: https://github.com/sap-samples/gtt-tutorial-models
+
+Files: *
+Copyright: 2020 SAP SE or an SAP affiliate company and gtt-tutorial-models contributors
+License: Apache-2.0
