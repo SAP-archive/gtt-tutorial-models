@@ -1,3 +1,5 @@
+![](https://img.shields.io/badge/STATUS-NOT%20CURRENTLY%20MAINTAINED-red.svg?longCache=true&style=flat)
+
 [![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/gtt-tutorial-models)](https://api.reuse.software/info/github.com/SAP-samples/gtt-tutorial-models)
 
 # Tutorial Models for SAP Logistics Business Network, Global Track and Trace Option (Version 1)
